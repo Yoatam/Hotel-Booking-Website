@@ -1,0 +1,478 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block content1 %}
+<!-- home section... -->
+<section id="home" class="banner_wrapper p-0">
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="
+          background-image: url('{% static 'images/slider/slide5.webp' %}');">
+        <div class="slide-caption text-center">
+          <div>
+            <h1>Welcome To Hotels In Ethiopia </h1>
+            <p>
+              You are most welcome to the best hotels in Ethiopia , you can
+              book any time at your own pace. we provide the best facility you
+              have experienced ever. you are always welcome
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide" style="
+          background-image: url('{% static 'images/slider/slider2.webp' %}');
+        ">
+        <div class="slide-caption text-center">
+          <div>
+            <h1>Welcome To Hotels In Ethiopia </h1>
+            <p>
+              You are most welcome to the best hotels in Ethiopia , you can
+              book any time at your own pace. we provide the best facility you
+              have experienced ever. you are always welcome
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide" style="background-image: url('{% static 'images/slider/slide7.jpg' %}')">
+        <div class="slide-caption text-center">
+          <div>
+            <h1>Welcome To Hotels In Ethiopia </h1>
+            <p>
+              You are most welcome to the best hotels in Ethiopia, you can
+              book any time at your own pace. we provide the best facility you
+              have experienced ever. you are always welcome
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide" style="background-image: url('{% static 'images/slider/slide3.jpg' %}')">
+        <div class="slide-caption text-center">
+          <div>
+            <h1>Welcome To Hotels In Ethiopia </h1>
+            <p>
+              You are most welcome to the best hotels in Ethiopia , you can
+              book any time at your own pace. we provide the best facility you
+              have experienced ever. you are always welcome
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide" style="background-image: url('{% static 'images/slider/slide6.jpg' %}')">
+        <div class="slide-caption text-center">
+          <div>
+            <h1>Welcome To Hotels In Ethiopia </h1>
+            <p>
+              You are most welcome to the best hotels in Ethiopia, you can
+              book any time at your own pace. we provide the best facility you
+              have experienced ever. you are always welcome
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <div class="container booking-area">
+    <div class="row">
+      <div class="col-lg mb-3 mb-lg-0">
+        <input type="date" class="form-control" placeholder="Date" required />
+      </div>
+      <div class="col-lg mb-3 mb-lg-0">
+        <input type="date" class="form-control" placeholder="Date" required />
+      </div>
+
+      <div class="col-lg mb-3 mb-lg-0">
+        <select title="select" class="form-select" required>
+          <option selected>Adults</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+      </div>
+
+      <div class="col-lg mb-3 mb-lg-0">
+        <select title="select" class="form-select" required>
+          <option selected>Childrems</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+      </div>
+
+      <div class="col-lg mb-3 mb-lg-0">
+        {% block button1 %}
+        <button type="submit" class="main-btn rounded-2 px-lg-3">
+          <a href="{% url 'login' %}"> Check avialibility.</a>
+        </button>
+        {% endblock button1 %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about_wrapper">
+  <div class="container">
+    <div class="row flex-lg-row flex-column-reverse">
+      <div class="col-lg-6 text-center text-lg-start">
+        <h3>
+          Welcome to
+          <span>INN <br class="d-none d-lg-block" />
+            the heaven</span>
+          of your weekend
+        </h3>
+        <p>
+          A good hotel website should allow people to create and confirm
+          bookings online. It is not simply a contact form, but rather an online
+          reservation system installed on the website. By having a proper online
+          reservation system, people can easily check for room availability,
+          price rate, and secure the booking with payment..
+        </p>
+        <p>
+          This involves organizing content with customers in mind and making
+          sure key information such as rooms and rates, amenities, contact
+          details and online bookings are never more than a single click away.
+        </p>
+        {% block button2 %}
+        <a href="{% url 'about' %}" class="main-btn mt-4">Read more</a>
+
+        {% endblock %}
+
+
+      </div>
+
+      <div class="col-lg-6 mb-4 mb-lg-0 ps-lg-4 text-center">
+        <img src="{% static 'images/logo2.png'  %}" class="img-fluid" alt="About Us" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="container" />
+
+<!-- Rooms section -->
+<section id="rooms" class="rooms_wrapper">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 section-title text-center mb-5">
+        <h6>What I can do for you</h6>
+        <h3>Our Favorite Rooms</h3>
+      </div>
+    </div>
+
+    <div class="row m-0">
+      <div class="col-md-4 mb-4 mb-lg-0">
+        <div class="room-item">
+          <img src="{% static './images/room/room1.webp' %}" alt="" class="img-fluid g-0" />
+
+          <div class="room-item-wrap">
+            <div class="room-content">
+              <h5 class="text-white mb-lg-5 text-decoration-underline">
+                Junior Suite
+              </h5>
+              <p class="text-white">
+                Discover five of our favourite dresses from our new collection
+                that are destined to be worn and loved immediately
+              </p>
+              <p class="text-white fw-bold mt-lg-4">2000 ETB / Per Night</p>
+
+              {% block button3 %}
+              <a class="main-btn border-white text-white mt-lg-5" href="{% url 'service'%}">Book now</a>
+              {% endblock button3 %}
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4 mb-lg-0">
+        <div class="room-item">
+          <img src="{% static './images/room/room2.webp' %}" alt="" class="img-fluid" />
+          <div class="room-item-wrap">
+            <div class="room-content">
+              <h5 class="text-white mb-lg-5 text-decoration-underline">
+                Royal Suite
+              </h5>
+              <p class="text-white">
+                Discover five of our favourite dresses from our new collection
+                that are destined to be worn and loved immediately
+              </p>
+              <p class="text-white fw-bold mt-lg-4">3000 ETB / Per Night</p>
+              {% block button4 %}
+              <a class="main-btn border-white text-white mt-lg-5" href="{% url 'service'%}">Book now</a>
+              {% endblock button4 %}
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4 mb-lg-0">
+        <div class="room-item">
+          <img src="{% static './images/room/room3.webp' %}" alt="" class="img-fluid" />
+          <div class="room-item-wrap">
+            <div class="room-content">
+              <h5 class="text-white mb-lg-5 text-decoration-underline">
+                Presidential Suite
+              </h5>
+              <p class="text-white">
+                Discover five of our favourite dresses from our new collection
+                that are destined to be worn and loved immediately
+              </p>
+              <p class="text-white fw-bold mt-lg-4">5000 ETB/ Per Night</p>
+              {% block button5 %}
+              <a class="main-btn border-white text-white mt-lg-5" href="{% url 'service'%}">Book now</a>
+
+              {% endblock button5 %}
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 mycenter">
+        {% block btn6 %}
+        <a href="{% url 'service' %}" class="main-btn mt-2">View all services</a>
+        {% endblock btn6 %}
+
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="container" />
+<!-- Gallery section -->
+
+<section id="gallery" class="gallery_wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 section-title text-center mb-5">
+        <h6>Best Pictures Of Our Hotel</h6>
+        <h3>Our Gallery</h3>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6 ">
+        <img src="{% static './images/gallery/1.webp' %}" alt="" class="img-fluid w-100" />
+      </div>
+
+      <div class="col-lg-3 col-md-6 ">
+        <img src="{% static './images/gallery/2.webp' %}" alt="" class="img-fluid w-100" />
+       
+      </div>
+      <div class="col-lg-3 col-md-6 ">
+        <img src="{% static './images/gallery/3.webp' %}" alt="" class="img-fluid w-100" />
+        
+      </div>
+      <div class="col-lg-3 col-md-6 ">
+        <img src="{% static './images/gallery/4.webp' %}" alt="" class="img-fluid w-100" />
+       
+      </div>
+
+      <div class="col-md-6 ">
+        <img src="{% static './images/gallery/5.webp' %}" alt="" class="img-fluid w-100" />
+       
+      </div>
+      <div class="col-md-6">
+        <img src="{% static './images/gallery/6.webp' %}" alt="" class="img-fluid w-100" />
+        
+      </div>
+    </div>
+  </div>
+</section>
+<hr class="container" />
+
+<!-- Pricing section -->
+<section id="price" class="price_wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 section-title text-center mb-5">
+        <h6>Best & Affordable Price for you</h6>
+        <h3>Our Pricing</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card p-4 text-center rounded-3">
+          <h5 class="text-decoration-underline mb-4">Single Room</h5>
+          <ul class="list-unstyled">
+            <li>
+              <p>Single Bed</p>
+            </li>
+            <li>
+              <p>TV</p>
+            </li>
+            <li>
+              <p>Restaurant (Snacks)</p>
+            </li>
+            <li>
+              <p>Bar</p>
+            </li>
+          </ul>
+          <hr />
+          <h3>2000 ETB<sub class="fs-6 fw-normal">/NIGHT</sub></h3>
+          {% block btn8 %}
+          <a href="{% url 'signup'%}" class="main-btn">Sign Up</a>
+          {% endblock btn8 %}
+
+
+
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card p-4 text-center rounded-3">
+          <h5 class="text-decoration-underline mb-4">Double Room</h5>
+          <ul class="list-unstyled">
+            <li>
+              <p>Double Bed</p>
+            </li>
+            <li>
+              <p>TV & WIFI</p>
+            </li>
+            <li>
+              <p>Restaurant</p>
+            </li>
+            <li>
+              <p>Bar</p>
+            </li>
+          </ul>
+          <hr />
+          <h3>2500 ETB<sub class="fs-6 fw-normal">/NIGHT</sub></h3>
+          {% block btn9 %}
+          <a href="{% url 'signup'%}" class="main-btn">Sign Up</a>
+          {% endblock btn9 %}
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card p-4 text-center rounded-3">
+          <h5 class="text-decoration-underline mb-4">Junior Suites</h5>
+          <ul class="list-unstyled">
+            <li>
+              <p>Swimming Pool</p>
+            </li>
+            <li>
+              <p>Kitchen</p>
+            </li>
+            <li>
+              <p>Gym</p>
+            </li>
+            <li>
+              <p>Sauna</p>
+            </li>
+          </ul>
+          <hr />
+          <h3>3500 ETB<sub class="fs-6 fw-normal">/NIGHT</sub></h3>
+          {% block btn10 %}
+          <a href="{% url 'signup'%}" class="main-btn">Sign Up</a>
+          {% endblock btn10 %}
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card p-4 text-center rounded-3">
+          <h5 class="text-decoration-underline mb-4">Presidential Suites</h5>
+          <ul class="list-unstyled">
+            <li>
+              <p>Luxurious Beds</p>
+            </li>
+            <li>
+              <p>Balcony</p>
+            </li>
+            <li>
+              <p>Free Food</p>
+            </li>
+            <li>
+              <p>Gym, Swimmong Poola</p>
+            </li>
+          </ul>
+          <hr />
+          <h3>5000 ETB<sub class="fs-6 fw-normal">/NIGHT</sub></h3>
+          {% block btn11 %}
+          <a href="{% url 'signup'%}" class="main-btn">Sign Up</a>
+          {% endblock btn11 %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock content1 %}
+
+
+{% block content3 %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 section-title text-center mb-5">
+      <h6>Say Hello To Our Visitors</h6>
+      <h3>Our Blog</h3>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 mb-4">
+      <div class="card p-0 rounded-1">
+        <img src="{% static 'images/blog/b4.webp' %}" alt="" />
+        <hr />
+        <div class="blog-content bg-white p-4">
+          <h5 class="text-decoration-underline mb-4">Relax Zone</h5>
+          <h6>By Admin - March 24, 2024</h6>
+          <p class="mt-2">
+            Posts are typically displayed in reverse chronological order so that
+            the most recent post appears first, at the top of the web page.
+          </p>
+          {% block btn12 %}
+          <a href="{% url 'blog'%}" class="main-btn mt-2">Read More</a>
+          {% endblock btn12 %}
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 mb-4 mx-0">
+      <div class="card p-0 rounded-0">
+        <img src="{% static 'images/blog/b4.jpg' %}" alt="" />
+        <div class="blog-content bg-white p-4">
+          <h5 class="text-decoration-underline mb-4">Relax Zone</h5>
+          <h6>By Admin - March 24, 2024</h6>
+          <p class="mt-2">
+            Posts are typically displayed in reverse chronological order so that
+            the most recent post appears first, at the top of the web page.
+          </p>
+          {% block btn13 %}
+          <a href="{% url 'blog'%}" class="main-btn mt-2">Read More</a>
+          {% endblock btn13 %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12 mycenter">
+      {% block btn14 %}
+      <a href="{% url 'blog'%}" class="main-btn mt-2">Read More blogs</a>
+      {% endblock btn14 %}
+
+    </div>
+  </div>
+</div>
+{% endblock content3 %}

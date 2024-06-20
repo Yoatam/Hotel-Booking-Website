@@ -1,0 +1,208 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block style %}
+<style></style>
+
+{% endblock style %}
+
+
+
+{% block content1 %}
+
+<section id="rooms" class="rooms_wrapper">
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-sm-12 section-title text-center mb-5">
+        <h3>Here is the list of all services which we provide ..</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 section-title text-center mb-3">
+        <h3>Most Affordable Rooms</h3>
+      </div>
+      <div class="text-center container px-4">
+        <p>
+          From room descriptions and packages to services, amenities and
+          location information, hotels and other lodgings have a lot of
+          information to cover so it's especially important for hotel websites
+          to organize content well.The main goal is to create revenue via direct
+          online bookings or, indeed, by stimulating bookings via e-mail, as
+          well as, to the projection of the hotel brand identity....A website is
+          the first place where Guests look for information about the hotel. The
+          information is available at all times and thus, it is important that
+          they are presented in an attractive way and managed appropriately. A
+          website is also the main platform for communication with the
+          guests....
+        </p>
+      </div>
+    </div>
+
+    <div class="row m-0 py-4">
+
+      <div class="col-md-4 mb-4 mb-lg-0 my-4">
+        <div class="room-item">
+          <img src="{% static './images/room/room1.webp' %}" alt="" class="img-fluid g-0" />
+
+          <div class="room-item-wrap">
+            <div class="room-content">
+              <h5 class="text-white mb-lg-5 text-decoration-underline">
+                Royal Suit
+              </h5>
+              <p class="text-white">
+                Discover five of our favourite dresses from our new collection
+                that are destined to be worn and loved immediately
+              </p>
+              <p class="text-white fw-bold mt-lg-4">$220 / Per Night</p>
+              {% block btn1 %}
+              <a class="main-btn border-white text-white mt-lg-5" href="{% url 'login'%}">Book now</a>
+              {% endblock btn1 %}
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4 mb-lg-0 my-4">
+        <div class="room-item">
+          <img src="{% static './images/room/room2.webp' %}" alt="" class="img-fluid g-0" />
+
+          <div class="room-item-wrap">
+            <div class="room-content">
+              <h5 class="text-white mb-lg-5 text-decoration-underline">
+                Royal Suit
+              </h5>
+              <p class="text-white">
+                Discover five of our favourite dresses from our new collection
+                that are destined to be worn and loved immediately
+              </p>
+              <p class="text-white fw-bold mt-lg-4">$220 / Per Night</p>
+              {% block btn2 %}
+              <a class="main-btn border-white text-white mt-lg-5" href="{% url 'login'%}">Book now</a>
+              {% endblock btn2 %}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4 mb-lg-0 my-4">
+        <div class="room-item">
+          <img src="{% static './images/room/room3.webp' %}" alt="" class="img-fluid g-0" />
+
+          <div class="room-item-wrap">
+            <div class="room-content">
+              <h5 class="text-white mb-lg-5 text-decoration-underline">
+                Royal Suit
+              </h5>
+              <p class="text-white">
+                Discover five of our favourite dresses from our new collection
+                that are destined to be worn and loved immediately
+              </p>
+              <p class="text-white fw-bold mt-lg-4">$220 / Per Night</p>
+              {% block btn3 %}
+              <a class="main-btn border-white text-white mt-lg-5" href="{% url 'login'%}">Book now</a>
+              {% endblock btn3 %}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="container my-4" />
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 section-title text-center mb-2">
+        <h3>Most luxurious Rooms at best price</h3>
+      </div>
+      <div class="text-center container px-4">
+        <p>
+          From room descriptions and packages to services, amenities and
+          location information, hotels and other lodgings have a lot of
+          information to cover so it's especially important for hotel websites
+          to organize content well.The main goal is to create revenue via direct
+          online bookings or, indeed, by stimulating bookings via e-mail, as
+          well as, to the projection of the hotel brand identity....A website is
+          the first place where Guests look for information about the hotel. The
+          information is available at all times and thus, it is important that
+          they are presented in an attractive way and managed appropriately. A
+          website is also the main platform for communication with the
+          guests....
+        </p>
+      </div>
+    </div>
+    <div class="row m-0 py-4">
+      <div class="col-md-4 mb-4 mb-lg-0 my-4">
+        <div class="room-item">
+          <img src="{% static './images/h2.jpg' %}" alt="" class="img-fluid g-0" />
+
+          <div class="room-item-wrap">
+            <div class="room-content">
+              <h5 class="text-white mb-lg-5 text-decoration-underline">
+                Royal Suit
+              </h5>
+              <p class="text-white">
+                Discover five of our favourite dresses from our new collection
+                that are destined to be worn and loved immediately
+              </p>
+              <p class="text-white fw-bold mt-lg-4">$220 / Per Night</p>
+              {% block btn4 %}
+              <a class="main-btn border-white text-white mt-lg-5" href="{% url 'login'%}">Book now</a>
+              {% endblock btn4 %}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4 mb-lg-0 my-4">
+        <div class="room-item">
+          <img src="{% static './images/h3.jfif' %}" alt="" class="img-fluid" />
+          <div class="room-item-wrap">
+            <div class="room-content">
+              <h5 class="text-white mb-lg-5 text-decoration-underline">
+                Royal Suit
+              </h5>
+              <p class="text-white">
+                Discover five of our favourite dresses from our new collection
+                that are destined to be worn and loved immediately
+              </p>
+              <p class="text-white fw-bold mt-lg-4">$220 / Per Night</p>
+              {% block btn5 %}
+              <a class="main-btn border-white text-white mt-lg-5" href="{% url 'login'%}">Book now</a>
+              {% endblock btn5 %}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4 mb-lg-0 my-4">
+        <div class="room-item">
+          <img src="{% static './images/room/room3.webp' %}" alt="" class="img-fluid" />
+          <div class="room-item-wrap">
+            <div class="room-content">
+              <h5 class="text-white mb-lg-5 text-decoration-underline">
+                Royal Suit
+              </h5>
+              <p class="text-white">
+                Discover five of our favourite dresses from our new collection
+                that are destined to be worn and loved immediately
+              </p>
+              <p class="text-white fw-bold mt-lg-4">$220 / Per Night</p>
+              {% block btn6 %}
+              <a class="main-btn border-white text-white mt-lg-5" href="{% url 'login'%}">Book now</a>
+              {% endblock btn6 %}
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="container my-3" />
+    </div>
+  </div>
+</section>
+<hr class="container-fluid" />
+
+{% endblock content1 %}
+{% block javascript_files %}
+<script src="{% static 'js/main2.js' %}"></script>
+{% endblock javascript_files %}
